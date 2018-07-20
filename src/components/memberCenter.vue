@@ -13,38 +13,71 @@
           <span class="llx">流量侠</span>
           <el-menu-item index="1">
             <i class="el-icon-menu"></i>
-            <span slot="title">导航二</span>
+            <span slot="title">主页</span>
           </el-menu-item>
           <el-submenu index="2">
-            <template slot="title">
+            <template slot="title">淘宝APP</template>
+            <el-menu-item index="2-1">
               <i class="el-icon-location"></i>
-              <span>导航一</span>
-            </template>
-            <el-menu-item-group>
-              <template slot="title">分组一</template>
-              <el-menu-item index="1-1">选项1</el-menu-item>
-              <el-menu-item index="1-2">选项2</el-menu-item>
-            </el-menu-item-group>
-            <el-menu-item-group title="分组2">
-              <el-menu-item index="1-3">选项3</el-menu-item>
-            </el-menu-item-group>
-            <el-submenu index="1-4">
-              <template slot="title">选项4</template>
-              <el-menu-item index="1-4-1">选项1</el-menu-item>
-            </el-submenu>
+              <span>刷淘宝APP流量</span>
+            </el-menu-item>
           </el-submenu>
-          <el-menu-item index="3">
-            <i class="el-icon-menu"></i>
-            <span slot="title">导航二</span>
-          </el-menu-item>
-          <el-menu-item index="4" disabled>
-            <i class="el-icon-document"></i>
-            <span slot="title">导航三</span>
-          </el-menu-item>
-          <el-menu-item index="5">
-            <i class="el-icon-setting"></i>
-            <span slot="title">导航四</span>
-          </el-menu-item>
+          <el-submenu index="3">
+            <template slot="title">移动任务管理</template>
+            <el-menu-item index="3-1">
+              <i class="el-icon-location"></i>
+              <span>移动端普通量</span>
+            </el-menu-item>
+            <el-menu-item index="3-2">
+              <i class="el-icon-location"></i>
+              <span>移动端点击量</span>
+            </el-menu-item>
+          </el-submenu>
+          <el-submenu index="4">
+            <template slot="title">刷京东流量</template>
+            <el-menu-item index="4-1">
+              <i class="el-icon-location"></i>
+              <span>刷手机京东APP流量</span>
+            </el-menu-item>
+            <el-menu-item index="4-2">
+              <i class="el-icon-location"></i>
+              <span>刷微信京东流量</span>
+            </el-menu-item>
+          </el-submenu>
+          <el-submenu index="5">
+            <template slot="title">PC任务</template>
+            <el-menu-item index="5-1">
+              <i class="el-icon-location"></i>
+              <span>刷PC点击量</span>
+            </el-menu-item>
+            <el-menu-item index="5-2">
+              <i class="el-icon-location"></i>
+              <span>刷PC普通量</span>
+            </el-menu-item>
+          </el-submenu>
+          <el-submenu index="6">
+            <template slot="title">账户管理</template>
+            <el-menu-item index="6-1">
+              <i class="el-icon-location"></i>
+              <span>账户验证</span>
+            </el-menu-item>
+            <el-menu-item index="6-2">
+              <i class="el-icon-location"></i>
+              <span>修改密码</span>
+            </el-menu-item>
+            <el-menu-item index="6-3">
+              <i class="el-icon-location"></i>
+              <span>账户充值</span>
+            </el-menu-item>
+            <el-menu-item index="6-4">
+              <i class="el-icon-location"></i>
+              <span>会员转账</span>
+            </el-menu-item>
+            <el-menu-item index="6-5">
+              <i class="el-icon-location"></i>
+              <span>安全退出</span>
+            </el-menu-item>
+          </el-submenu>
         </el-menu>
       </el-aside>
       <el-container>
@@ -77,6 +110,8 @@ export default {
 
 .el-aside {
   text-align: center;
+  height: 1000px;
+  background-color: rgb(47,64,80);
 }
 
 .el-main {
@@ -89,7 +124,12 @@ export default {
 body > .el-container {
   margin-bottom: 40px;
 }
-
+.el-menu {
+  border: none;
+}
+.el-menu-item, .el-submenu__title {
+  height: 46px !important;
+}
 .el-menu-item:focus, .el-menu-item:hover {
   background-color: rgb(39, 58, 74) !important;
   color: burlywood !important;
