@@ -89,61 +89,61 @@
 </template>
 
 <script>
-export default {
-  name: 'MemberCenter',
-  data () {
-    return {
-      msg: ''
+  export default {
+    name: 'MemberCenter',
+    data () {
+      return {
+        msg: ''
+      }
     }
   }
-}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.el-header, .el-footer {
-  background-color: #B3C0D1;
-  color: #333;
-  text-align: center;
-  line-height: 60px;
-}
+  .el-header, .el-footer {
+    background-color: #B3C0D1;
+    color: #333;
+    text-align: center;
+    line-height: 60px;
+  }
 
-.el-aside {
-  text-align: center;
-  height: 1000px;
-  background-color: rgb(47,64,80);
-}
+  .el-aside {
+    text-align: center;
+    height: 1000px;
+    background-color: rgb(47,64,80);
+  }
 
-.el-main {
-  background-color: #E9EEF3;
-  color: #333;
-  text-align: center;
-  line-height: 160px;
-}
+  .el-main {
+    background-color: #E9EEF3;
+    color: #333;
+    text-align: center;
+    line-height: 160px;
+  }
 
-body > .el-container {
-  margin-bottom: 40px;
-}
-.el-menu {
-  border: none;
-}
-.el-menu-item, .el-submenu__title {
-  height: 46px !important;
-}
-.el-menu-item:focus, .el-menu-item:hover {
-  background-color: rgb(39, 58, 74) !important;
-  color: burlywood !important;
-}
-.el-submenu__title:focus, .el-submenu__title:hover {
-  background-color: rgb(39, 58, 74) !important;
-  color: burlywood !important;
-}
-.llx {
-  display: inline-block;
-  width: 100%;
-  background-color: rgb(39, 58, 74);
-  color: #fff;
-  font-size: 24px;
-  line-height: 76px;
-}
+  body > .el-container {
+    margin-bottom: 40px;
+  }
+  .el-menu {
+    border: none;
+  }
+  .el-menu-item, .el-submenu__title {
+    height: 46px !important;
+  }
+  .el-menu-item:focus, .el-menu-item:hover {
+    background-color: rgb(39, 58, 74) !important;
+    color: burlywood !important;
+  }
+  .el-submenu__title:focus, .el-submenu__title:hover {
+    background-color: rgb(39, 58, 74) !important;
+    color: burlywood !important;
+  }
+  .llx {
+    display: inline-block;
+    width: 100%;
+    background-color: rgb(39, 58, 74);
+    color: #fff;
+    font-size: 24px;
+    line-height: 76px;
+  }
 </style>
